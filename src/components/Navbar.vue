@@ -102,24 +102,24 @@ const closeMenu = () => {
   transition: 0.3s ease;
 }
 
-.menu-toggle span::before {
+span::before {
   top: -8px;
 }
 
-.menu-toggle span::after {
+span::after {
   top: 8px;
 }
 
-.menu-toggle .open {
+.open {
   background: transparent;
 }
 
-.menu-toggle .open::before {
+.open::before {
   transform: rotate(45deg);
   top: 0;
 }
 
-.menu-toggle .open::after {
+.open::after {
   transform: rotate(-45deg);
   top: 0;
 }
@@ -146,12 +146,12 @@ const closeMenu = () => {
     transform: translateY(0);
   }
 
-  nav ul {
+  ul {
     flex-direction: column;
     padding: 1rem 0;
   }
 
-  nav ul li {
+  li {
     margin: 10px 0;
   }
 }
@@ -169,7 +169,7 @@ const closeMenu = () => {
 }
 
 /* Logo */
-.header .logo {
+.logo {
   font-size: 1.8rem;
   font-weight: bold;
   display: flex;
@@ -177,20 +177,20 @@ const closeMenu = () => {
   gap: 0.5rem;
 }
 
-.header .logo .icon {
+.icon {
   width: 24px;
   height: 24px;
   color: white;
 }
 
 /* Navegación */
-nav ul {
+ ul {
   display: flex;
   list-style: none;
   gap: 1.5rem;
 }
 
-nav ul li a {
+a {
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -198,30 +198,21 @@ nav ul li a {
   align-items: center;
   gap: 0.5rem;
   transition: color 0.3s ease;
+  
 }
 
-nav ul li a .icon {
-  width: 20px;
-  height: 20px;
-}
 
-nav ul li a:hover {
+a:hover {
   color: #2ecc71;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+
 }
 
 /* Botón hamburguesa */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
 
-.menu-toggle .icon {
-  width: 32px;
-  height: 32px;
-  color: white;
-}
+
+
 
 /* Menú responsivo */
 @media (max-width: 768px) {
@@ -236,13 +227,15 @@ nav ul li a:hover {
     width: 100%;
     background: rgba(52, 152, 219, 0.9);
     backdrop-filter: blur(10px);
-    transform: translateY(-100%);
+    transform: translateY(-130%);
     transition: transform 0.3s ease;
     text-align: center;
+
   }
 
   nav.open {
     transform: translateY(0);
+    background-color: #1b1b1b9a;
   }
 
   nav ul {

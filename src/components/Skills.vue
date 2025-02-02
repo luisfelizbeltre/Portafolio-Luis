@@ -72,7 +72,7 @@ const toggleHiddenCategories = () => {
             <div v-for="(skill, sIndex) in category.skills" :key="sIndex" class="skill">
               <i :class="skill.icon"></i>
               <span>{{ skill.name }}</span>
-              <div class="skill-level" :style="{ width: skill.level + '%' }"></div>
+              
             </div>
           </div>
         </div>
@@ -84,7 +84,6 @@ const toggleHiddenCategories = () => {
               <div v-for="(skill, sIndex) in category.skills" :key="'hidden-skill-' + sIndex" class="skill">
                 <i :class="skill.icon"></i>
                 <span>{{ skill.name }}</span>
-                <div class="skill-level" :style="{ width: skill.level + '%' }"></div>
               </div>
             </div>
           </div>
@@ -104,15 +103,16 @@ const toggleHiddenCategories = () => {
   text-align: center;
 }
 
-.skills h2 {
+h2 {
   margin-bottom: 1rem;
   color: #3498db;
 }
 
-.skills .skills-grid {
+.skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+  padding: 20px;
 }
 
 .skills .skill-category {
@@ -131,8 +131,9 @@ const toggleHiddenCategories = () => {
 
 .skills .skill-category .skill-list {
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .skills .skill-category .skill-list .skill {

@@ -43,8 +43,8 @@ onMounted(() => {
 
 /* ===== Contenedor ===== */
 .container {
-  max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 /* ===== Título con animación ===== */
@@ -65,6 +65,7 @@ h2 {
   transition: transform 0.3s ease, opacity 0.5s ease;
   opacity: 0;
   transform: translateY(20px);
+  
 }
 
 /* Aparece con animación */

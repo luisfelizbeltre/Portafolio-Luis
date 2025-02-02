@@ -25,7 +25,7 @@
         </div>
 
         <!-- Botón de descarga -->
-        <a href="/public/luis CV 2025.pdf" download class="btn">Descargar CV</a>
+        <a href="/luis CV 2025.pdf" download class="btn">Descargar CV</a>
       </div>
     </div>
   </section>
