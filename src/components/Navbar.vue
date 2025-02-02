@@ -3,7 +3,7 @@
     <div class="container">
       <!-- Logo con icono -->
       <h1 class="logo">
-        <LucideUser class="icon" /> [Luis Eduardo]
+        <LucideUser class="icon" /> [Luis Eduardo]{{ visits }}
       </h1>
 
       <!-- Menú de navegación -->
@@ -47,7 +47,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref,onMounted } from "vue";
 import {
   LucideHome,
   LucideUser,
@@ -67,6 +67,18 @@ const toggleMenu = () => {
 const closeMenu = () => {
   menuOpen.value = false;
 };
+const visits=ref(0)
+onMounted (async () => {
+  try {
+    const response = await fetch('http://localhost:3000/visits')
+    const data= await response.json();
+    visits.value=data.visits;
+     
+  } catch (error) {
+    console.error('error al obtener las visitas',error)
+  }
+})
+
 </script>
 
 <style scoped>
