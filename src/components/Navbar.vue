@@ -31,7 +31,7 @@
           </li>
           <li>
             <a href="#contact" @click="closeMenu">
-              <LucideMail class="icon" /> Contacto{{ visits }}
+              <LucideMail class="icon" /> Contacto
             </a>
           </li>
         </ul>
