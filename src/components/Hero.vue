@@ -13,13 +13,13 @@
 
         <!-- Redes sociales -->
         <div class="social-links">
-          <a href="https://github.com/tuusuario" target="_blank" class="social-btn">
+          <a href="https://github.com/luisfelizbeltre" target="_blank" class="social-btn">
             <LucideGithub class="icon" />
           </a>
-          <a href="https://linkedin.com/in/tuusuario" target="_blank" class="social-btn">
+          <a href="https://linkedin.com/in/luis-eduardo-feliz-beltre" target="_blank" class="social-btn">
             <LucideLinkedin class="icon" />
           </a>
-          <a href="mailto:tucorreo@example.com" class="social-btn">
+          <a href="mailto:dev@luiseduardodev.com" class="social-btn">
             <LucideMail class="icon" />
           </a>
         </div>

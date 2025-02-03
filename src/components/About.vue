@@ -14,7 +14,7 @@
           </p>
           <p>
             <LucideMail class="icon" /> <strong>Correo:</strong> 
-            <a href="mailto:tucorreo@example.com">luisfelizbeltre@gmail.com</a>
+            <a href="mailto:dev@luiseduardodev.com">dev@luiseduardodev.com</a>
           </p>
         </div>
       </div>
