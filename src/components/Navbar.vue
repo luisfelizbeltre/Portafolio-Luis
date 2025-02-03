@@ -3,7 +3,7 @@
     <div class="container">
       <!-- Logo con icono -->
       <h1 class="logo">
-        <LucideUser class="icon" /> [Luis Eduardo]{{ visits }}
+        <LucideUser class="icon" /> [Luis Eduardo]
       </h1>
 
       <!-- Menú de navegación -->
@@ -31,7 +31,7 @@
           </li>
           <li>
             <a href="#contact" @click="closeMenu">
-              <LucideMail class="icon" /> Contacto
+              <LucideMail class="icon" /> Contacto{{ visits }}
             </a>
           </li>
         </ul>
