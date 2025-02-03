@@ -68,16 +68,16 @@ const closeMenu = () => {
   menuOpen.value = false;
 };
 const visits=ref(0)
-onMounted (async () => {
+onMounted(async () => {
   try {
-    const response = await fetch('/api/visits')
-    const data= await response.json();
-    visits.value=data.visits;
-     
+    const response = await fetch('/api/visits'); // Llamada a la API
+    const data = await response.json();
+    console.log('Respuesta de la API:', data); // Verificación en la consola
+    visits.value = data.visits; // Actualizar el contador
   } catch (error) {
-    console.error('error al obtener las visitas',error)
+    console.error('Error al obtener las visitas:', error);
   }
-})
+});
 
 </script>
 
