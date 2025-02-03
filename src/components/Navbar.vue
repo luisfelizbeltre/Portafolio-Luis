@@ -70,7 +70,7 @@ const closeMenu = () => {
 const visits=ref(0)
 onMounted (async () => {
   try {
-    const response = await fetch('http://localhost:3000/visits')
+    const response = await fetch('/api/visits')
     const data= await response.json();
     visits.value=data.visits;
      
