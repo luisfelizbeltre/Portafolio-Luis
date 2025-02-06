@@ -99,6 +99,8 @@ const toggleHiddenCategories = () => {
 
 <style scoped>
 .skills {
+  background-color: #e7f2fd;
+
   padding: 2rem 0;
   text-align: center;
   transition: transform 0.1s ease, background 0.3s ease;

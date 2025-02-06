@@ -59,9 +59,8 @@ button:focus-visible {
 
 
   body {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(52, 152, 219, 0.6)),
-                url('https://source.unsplash.com/1600x900/?technology,code') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(52, 152, 219, 0.6));
+        background-size: cover;
   }
   
 

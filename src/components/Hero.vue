@@ -4,7 +4,9 @@
       <div class="hero-content">
         <!-- Imagen de perfil -->
         <div class="img-container">
-          <img src="/luisfoto.jpeg" alt="Foto de [luis]" class="hero-img" />
+          <nuxt-img src="/image.png" format="webp" />
+
+          <img src="/luisfoto.webp" alt="Foto de [luis]" class="hero-img" loading="lazy" />
         </div>
 
         <!-- Texto animado -->
@@ -25,7 +27,7 @@
         </div>
 
         <!-- Botón de descarga -->
-        <a href="/luis CV 2025.pdf" download class="btn">Descargar CV</a>
+        <a href="/luis CV 2025.pdf"  download class="btn">Descargar CV</a>
       </div>
     </div>
   </section>

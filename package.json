@@ -9,11 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nuxt/image": "^1.9.0",
     "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "lucide-vue-next": "^0.474.0",
-    "vue": "^3.5.13"
+    "reat": "^0.0.1-security",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",

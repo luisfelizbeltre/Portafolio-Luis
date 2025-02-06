@@ -38,7 +38,7 @@ onMounted(() => {
 .about {
   padding: 4rem 0;
   text-align: center;
-  background: linear-gradient(135deg, #ecf0f1, #dfe6e9);
+background-color: #e7f2fd;
 }
 
 /* ===== Contenedor ===== */

@@ -1,6 +1,5 @@
 <script setup>
 import { Analytics } from '@vercel/analytics/vue';
-
 import Navbar from './components/Navbar.vue';
 import Hero from './components/Hero.vue';
 import About from './components/About.vue';
