@@ -101,6 +101,12 @@ const toggleHiddenCategories = () => {
 .skills {
   padding: 2rem 0;
   text-align: center;
+  transition: transform 0.1s ease, background 0.3s ease;
+}
+
+.skill:hover{
+  transform: scale(1.2);
+  cursor:default
 }
 
 h2 {
@@ -121,7 +127,10 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
+  transition: transform 0.4s ease;
 }
+.skill-category:hover{
+  transform: translateY(-5px);}
 
 .skills .skill-category h3 {
   font-size: 1.25rem;

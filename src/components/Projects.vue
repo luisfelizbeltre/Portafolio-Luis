@@ -15,7 +15,11 @@
 
 <script setup>
 const proyectos = [
-  { nombre: "Proyecto 1", descripcion: "Descripción del proyecto 1.", link: "#" },
+{
+    nombre: "ProjectSync",
+    descripcion: "Plataforma para la sincronización de tareas y proyectos en equipo. Implementa autenticación segura (JWT), funcionalidades CRUD para administración, y una interfaz intuitiva con Vue.js. Utiliza Spring Security y MySQL para garantizar seguridad e integridad de los datos.",
+    link: "https://projectsync.com"
+  },
   { nombre: "Proyecto 2", descripcion: "Descripción del proyecto 2.", link: "#" }
 ];
 </script>

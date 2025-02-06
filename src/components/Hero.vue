@@ -146,7 +146,7 @@ p {
 .icon {
   width: 24px;
   height: 24px;
-  color: white;
+  color: #33322b;
 }
 
 /* ===== Animaciones ===== */

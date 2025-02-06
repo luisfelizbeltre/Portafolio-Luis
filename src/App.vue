@@ -1,4 +1,6 @@
 <script setup>
+import { Analytics } from '@vercel/analytics/vue';
+
 import Navbar from './components/Navbar.vue';
 import Hero from './components/Hero.vue';
 import About from './components/About.vue';
@@ -11,6 +13,7 @@ import Footerd from './components/Footer.vue';
 </script>
 
 <template>
+  <Analytics />
 
   <Navbar />
   <Hero />
