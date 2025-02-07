@@ -45,7 +45,7 @@ onMounted(() => {
 <style scoped>
 /* ===== Hero Section ===== */
 .hero {
-  background: linear-gradient(135deg, #3498db, #1abc9c);
+  background: linear-gradient(135deg, #263f50, #353837);
   color: #fff;
   padding: 5rem 0;
   text-align: center;
@@ -58,6 +58,7 @@ onMounted(() => {
 
 /* ===== Contenedor Hero ===== */
 .hero-content {
+
   max-width: 600px;
   margin: 0 auto;
   opacity: 0;
@@ -170,6 +171,52 @@ p {
     opacity: 1;
   }
 }
+
+/* Menú responsivo */
+@media (max-width: 768px) {
+  .social-links{
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+.hero{
+  padding: 3rem 0;
+}
+.hero-content{
+  padding-top: 2rem;
+}
+
+h2{
+  padding-top: 0px;
+  font-size: 1.7rem;
+  
+}
+p{
+  font-size: 0.9rem;
+}
+.img-container{
+  width: 120px;
+  height: 120px;
+}
+.social-links{
+  gap:0.7rem;
+}
+.container{
+  margin-top: ;
+
+}
+.hero-content {
+}
+.btn {
+    margin-top: 0;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 2;
+  }
+
+}
+
+
 
 @keyframes slideUp {
   from {

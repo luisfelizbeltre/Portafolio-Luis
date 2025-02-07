@@ -36,7 +36,6 @@ onMounted(() => {
 <style scoped>
 /* ===== Sección Sobre Mí ===== */
 .about {
-  padding: 4rem 0;
   text-align: center;
 background-color: #e7f2fd;
 }
