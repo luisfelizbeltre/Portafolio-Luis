@@ -201,7 +201,6 @@ p{
   gap:0.7rem;
 }
 .container{
-  margin-top: ;
 
 }
 .hero-content {

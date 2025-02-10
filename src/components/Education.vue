@@ -15,7 +15,7 @@ const educationData = [
   {
     icon: 'fas fa-certificate',
     title: 'Certificación en JavaScript',
-    institution: 'Plataforma [Nombre de la Plataforma]',
+    institution: '',
     date: '2022'
   }
 ];
