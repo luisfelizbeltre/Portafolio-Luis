@@ -3,15 +3,17 @@
     <div class="container">
       <div class="hero-content">
         <!-- Imagen de perfil -->
-        <div class="img-container">
+        <div class="hero-grid">
+        <div data-aos="flip-left" data-aos-duration="3000"
+        class="img-container">
           <nuxt-img src="/image.png" format="webp" />
 
           <img src="/luisfoto.webp" alt="Foto de [luis]" class="hero-img" loading="lazy" />
         </div>
-
-        <!-- Texto animado -->
-        <h2 class="fade-in">Hola, soy <span>[Luis Eduardo]</span></h2>
-        <p class="slide-up">Desarrollador Web | Apasionado por la tecnología</p>
+      <div class="hero-text">
+          <!-- Texto animado -->
+        <h2 class="fade-in">Luis Eduardo</h2>
+        <p class="slide-up">Desarrollador Full Stack</p>
 
         <!-- Redes sociales -->
         <div class="social-links">
@@ -26,10 +28,15 @@
           </a>
         </div>
 
+        </div>
+       
+
         <!-- Botón de descarga -->
         <a href="/luiss CV 2025.pdf"  download class="btn">Descargar CV</a>
       </div>
     </div>
+  </div>
+
   </section>
 </template>
 
@@ -45,13 +52,13 @@ onMounted(() => {
 <style scoped>
 /* ===== Hero Section ===== */
 .hero {
-  background: linear-gradient(135deg, #263f50, #353837);
   color: #fff;
   padding: 5rem 0;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 2000px;
   
   max-height: 50vh;
 }
@@ -59,13 +66,20 @@ onMounted(() => {
 /* ===== Contenedor Hero ===== */
 .hero-content {
 
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
 }
 
+.hero-grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+  flex-wrap:wrap;
+}
 .hero-content.visible {
   opacity: 1;
   transform: translateY(0);
@@ -73,9 +87,8 @@ onMounted(() => {
 
 /* ===== Imagen de perfil ===== */
 .img-container {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 1rem;
+  width: 260px;
+  height: 260px;
   position: relative;
   border-radius: 50%;
   overflow: hidden;
@@ -93,10 +106,14 @@ onMounted(() => {
   object-fit: cover;
   border-radius: 50%;
 }
+.hero-text {
+  text-align: left;
+  max-width: 400px;
+}
 
 /* ===== Texto Hero ===== */
 h2 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -129,13 +146,12 @@ p {
 /* ===== Redes Sociales ===== */
 .social-links {
   display: flex;
-  justify-content: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .social-btn {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(12, 53, 189, 0.2);
   padding: 0.7rem;
   border-radius: 50%;
   transition: transform 0.3s ease, background 0.3s ease;
@@ -149,7 +165,7 @@ p {
 .icon {
   width: 24px;
   height: 24px;
-  color: #33322b;
+  color: #ffffff;
 }
 
 /* ===== Animaciones ===== */
@@ -200,11 +216,7 @@ p{
 .social-links{
   gap:0.7rem;
 }
-.container{
 
-}
-.hero-content {
-}
 .btn {
     margin-top: 0;
     padding: 0.6rem 1.2rem;

@@ -16,10 +16,11 @@ import Footerd from './components/Footer.vue';
 
   <Navbar />
   <Hero />
-  <About />
   <Education/>
   <Projects />
   <Skills />
+  <About />
+
   <Footerd />
   
 </template>

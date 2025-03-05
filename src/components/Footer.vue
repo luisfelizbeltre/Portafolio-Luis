@@ -28,10 +28,9 @@ const email = "dev@luiseduardodev.com";
 
 <style scoped>
 .footer {
-  background: #222;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
+  padding: 1rem 0;
   font-size: 14px;
 }
 
@@ -40,12 +39,7 @@ const email = "dev@luiseduardodev.com";
   margin: auto;
 }
 
-.footer {
-  background-color: #3498db;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-}
+
 
 .footer p {
   margin: 0;

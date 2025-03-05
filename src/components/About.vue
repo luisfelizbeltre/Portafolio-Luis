@@ -4,19 +4,14 @@
       <h2 class="fade-in">Sobre mí</h2>
       <div class="about-card slide-up">
         <p>
-          ¡Hola! Soy <strong>[Luis Eduardo]</strong>, un desarrollador web con experiencia en
-          <strong>{{ tecnologias }}</strong>.
+          Desarrollador web con formación en SMR y DAW, y experiencia en
+ desarrollo Full Stack e implementación de soluciones tecnológicas. Destaco
+ por mis habilidades en resolución de problemas, organización y trabajo en
+ equipo, adquiridas en proyectos de software y el sector logístico.
+ Apasionado por la tecnología, busco seguir creciendo en el sector IT.
         </p>
 
-        <div class="contact-info">
-          <p>
-            <LucidePhone class="icon" /> <strong>Teléfono:</strong> +34 643 718 864
-          </p>
-          <p>
-            <LucideMail class="icon" /> <strong>Correo:</strong> 
-            <a href="mailto:dev@luiseduardodev.com">dev@luiseduardodev.com</a>
-          </p>
-        </div>
+       
       </div>
     </div>
   </section>
@@ -37,7 +32,6 @@ onMounted(() => {
 /* ===== Sección Sobre Mí ===== */
 .about {
   text-align: center;
-background-color: #e7f2fd;
 }
 
 /* ===== Contenedor ===== */
@@ -57,13 +51,17 @@ h2 {
 
 /* ===== Tarjeta de información ===== */
 .about-card {
-  background: white;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, opacity 0.5s ease;
   opacity: 0;
   transform: translateY(20px);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+
   
 }
 

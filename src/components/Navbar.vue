@@ -3,7 +3,7 @@
     <div class="container">
       <!-- Logo con icono -->
       <h1 class="logo">
-        <LucideUser class="icon" /> [Luis Eduardo]
+        <LucideUser class="icon" /> Luis Eduardo
       </h1>
 
       <!-- Menú de navegación -->
@@ -70,10 +70,65 @@ const closeMenu = () => {
 </script>
 
 <style scoped>
+/* Header */
+.header {
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 1rem ;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+/* Navegación */
+ ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  
+}
+
+
+a:hover {
+  color: #2ecc71;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+
+}
+
+
+
+
 /* Estilos generales */
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -155,63 +210,6 @@ span::after {
     margin: 10px 0;
   }
 }
-/* Header */
-.header {
-  background: rgba(52, 152, 219, 0.9);
-  backdrop-filter: blur(10px);
-  color: #fff;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: background 0.3s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo */
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-  color: white;
-}
-
-/* Navegación */
- ul {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: color 0.3s ease;
-  
-}
-
-
-a:hover {
-  color: #2ecc71;
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
-
-}
-
-/* Botón hamburguesa */
-
-
 
 
 /* Menú responsivo */

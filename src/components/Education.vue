@@ -41,7 +41,6 @@ const educationData = [
 .education {
   padding: 40px 0;
   text-align: center;
-  background-color: #e7f2fd;
 
 }
 .education-grid {
@@ -51,7 +50,6 @@ const educationData = [
   padding: 20px;
 }
 .education-item {
-  background-color: #fff;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -69,7 +67,7 @@ i {
 
 .date {
   font-size: 0.9rem;
-  color: #3498db;
+  color: #dbc234;
   font-weight: bold;
 }
 
@@ -88,11 +86,11 @@ h2 {
 h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #ffffff;
 }
 p {
   font-size: 1rem;
-  color: #666666;
+  color: white;
   margin-bottom: 0.5rem;
 }
 

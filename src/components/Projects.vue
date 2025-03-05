@@ -43,7 +43,18 @@ const proyectos = [
     ]
     
   },
-  { nombre: "Proyecto 2", descripcion: "Descripción del proyecto 2.", link: "#" }
+  {
+  nombre: "Quiz App en Spring Boot",
+  descripcion: "Aplicación de cuestionarios interactivos desarrollada con Spring Boot, que permite crear, gestionar y responder preguntas en tiempo real.",
+  link: "https://github.com/tu-repo",
+  image: "/projectsync.png",
+  skill: [
+    { name: "Spring Boot", icon: "devicon-spring-plain colored" },
+    { name: "Thymeleaf", icon: "devicon-html5-plain colored" },
+    { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
+    { name :"MySQL", icon: "devicon-mysql-plain colored" }
+  ]
+}
 ];
 </script>
 
@@ -58,7 +69,6 @@ const proyectos = [
 display: flex;
 align-items: center;
 justify-content: center;
-background: #f0f0f0;
 color: white;
 width: 40px;
 height: 40px;
@@ -92,10 +102,10 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 
 .project-card {
   transition: transform 0.3s ease;
-  background-color: #fff;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 
 
 }
@@ -103,7 +113,6 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 .projects {
   padding: 2rem 0;
   text-align: center;
-  background-color: #e7f2fd;
 }
 
 h2 {
@@ -125,6 +134,7 @@ h3 {
 
 p {
   margin-bottom: 1rem;
+  color : white;
 }
 
 .btn {
