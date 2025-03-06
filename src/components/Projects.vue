@@ -48,7 +48,18 @@ const proyectos = [
   descripcion: "Aplicación de cuestionarios interactivos desarrollada con Spring Boot, que permite crear, gestionar y responder preguntas en tiempo real.",
   link: "https://github.com/tu-repo",
   image: "/projectsync.png",
-  skill: [
+  skills: [
+    { name: "Spring Boot", icon: "devicon-spring-plain colored" },
+    { name: "Thymeleaf", icon: "devicon-html5-plain colored" },
+    { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
+    { name :"MySQL", icon: "devicon-mysql-plain colored" }
+  ]
+},{
+  nombre: "Quiz App en Spring Boot",
+  descripcion: "Aplicación de cuestionarios interactivos desarrollada con Spring Boot, que permite crear, gestionar y responder preguntas en tiempo real.",
+  link: "https://github.com/tu-repo",
+  image: "/doctorvoltio.png",
+  skills: [
     { name: "Spring Boot", icon: "devicon-spring-plain colored" },
     { name: "Thymeleaf", icon: "devicon-html5-plain colored" },
     { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
@@ -60,7 +71,9 @@ const proyectos = [
 
 <style scoped>
 /* Estilos de la sección */
-
+.container{
+  background-color: rgb(39, 40, 43);
+}
 .custom-icon{
   width: 100%;
   border-radius: 50%;
@@ -97,7 +110,6 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 .project-card:hover {
   transform: translateY(-5px);
 
-
 }
 
 .project-card {
@@ -105,6 +117,8 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: black;
+  border: 1px solid #ffffff8e;
   
 
 
@@ -130,6 +144,7 @@ h2 {
 
 h3 {
   margin-bottom: 0.5rem;
+  color: #38db34;
 }
 
 p {

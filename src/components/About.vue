@@ -3,15 +3,21 @@
     <div class="container">
       <h2 class="fade-in">Sobre mí</h2>
       <div class="about-card slide-up">
-        <p>
-          Desarrollador web con formación en SMR y DAW, y experiencia en
- desarrollo Full Stack e implementación de soluciones tecnológicas. Destaco
- por mis habilidades en resolución de problemas, organización y trabajo en
- equipo, adquiridas en proyectos de software y el sector logístico.
- Apasionado por la tecnología, busco seguir creciendo en el sector IT.
-        </p>
-
-       
+        <hr>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="/imagenprueba.jpg" alt="Sobre mi imagen">
+          </div>
+          <div class="about-text">
+            <p>
+              Desarrollador web con formación en SMR y DAW, y experiencia en
+              desarrollo Full Stack e implementación de soluciones tecnológicas. Destaco
+              por mis habilidades en resolución de problemas, organización y trabajo en
+              equipo, adquiridas en proyectos de software y el sector logístico.
+              Apasionado por la tecnología, busco seguir creciendo en el sector IT.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -19,9 +25,6 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { LucidePhone, LucideMail } from "lucide-vue-next"; // Importando iconos
-
-const tecnologias = "HTML, CSS, JavaScript, Vue.js";
 
 onMounted(() => {
   document.querySelector(".about-card").classList.add("visible");
@@ -30,20 +33,48 @@ onMounted(() => {
 
 <style scoped>
 /* ===== Sección Sobre Mí ===== */
-.about {
-  text-align: center;
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+hr {
+  width: 96%;
+  height: 3px;
+  background-color: #38db34;
+  border: none;
+  margin: 20px auto;
 }
 
 /* ===== Contenedor ===== */
 .container {
+  max-width: 90%;
   margin: 0 auto;
   padding: 20px;
 }
 
 /* ===== Título con animación ===== */
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #3498db;
+  text-align: center;
   margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeIn 1.5s forwards;
@@ -57,12 +88,10 @@ h2 {
   transition: transform 0.3s ease, opacity 0.5s ease;
   opacity: 0;
   transform: translateY(20px);
-  max-width: 700px;
   margin: 0 auto;
   text-align: left;
   color: white;
-
-  
+  max-width: 100%;
 }
 
 /* Aparece con animación */
@@ -71,35 +100,15 @@ h2 {
   transform: translateY(0);
 }
 
-/* ===== Contacto ===== */
-.contact-info {
-  margin-top: 1rem;
-}
-
-.contact-info p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  font-size: 1.1rem;
-  color: #2c3e50;
-}
-
-.contact-info a {
-  color: #3498db;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Íconos ===== */
-.icon {
-  width: 24px;
-  height: 24px;
-  color: #3498db;
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    text-align: center;
+  }
 }
 
 /* ===== Animaciones ===== */
@@ -109,17 +118,6 @@ h2 {
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 </style>

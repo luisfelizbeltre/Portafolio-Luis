@@ -1,10 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  background-color: #424141;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,14 +9,8 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
-
-
 
 h1 {
   font-size: 3.2em;
@@ -38,17 +28,12 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card {
-  padding: 2em;
-}
 
 #app {
   margin: 0 0;
@@ -57,8 +42,8 @@ button:focus-visible {
 
 
   body {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(52, 152, 219, 0.6));
         background-size: cover;
+        background-color: #1a1a1af3;
   }
   
 
@@ -75,38 +60,6 @@ ul {
   list-style: none;
 }
 
-
-.contact {
-  padding: 2rem 0;
-  text-align: center;
-}
-.contact h2 {
-  margin-bottom: 1rem;
-  color: #3498db;
-}
-.contact form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-.contact form input, .contact form textarea {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.contact form .btn {
-  background-color: #3498db;
-  color: #fff;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.contact form .btn:hover {
-  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
-}
 
 @keyframes fadeIn {
   from {

@@ -1,15 +1,4 @@
-<script setup>
-import { Analytics } from '@vercel/analytics/vue';
-import Navbar from './components/Navbar.vue';
-import Hero from './components/Hero.vue';
-import About from './components/About.vue';
-import Projects from './components/Projects.vue';
-import Skills from './components/Skills.vue';
-import Education from './components/Education.vue';
-import Footerd from './components/Footer.vue';
 
-
-</script>
 
 <template>
   <Analytics />
@@ -18,11 +7,12 @@ import Footerd from './components/Footer.vue';
   <Hero />
   <Education/>
   <Projects />
-  <Skills />
   <About />
-
-  <Footerd />
+  <Skills />
+  <Contact />
   
+  <Footerd />
+ 
 </template>
 
 <style scoped>
@@ -40,3 +30,15 @@ import Footerd from './components/Footer.vue';
 }
 </style>
 
+<script setup>
+import { Analytics } from '@vercel/analytics/vue';
+import Navbar from './components/Navbar.vue';
+import Hero from './components/Hero.vue';
+import About from './components/About.vue';
+import Projects from './components/Projects.vue';
+import Skills from './components/Skills.vue';
+import Education from './components/Education.vue';
+import Footerd from './components/Footer.vue';
+import Contact from './components/Contact.vue';
+
+</script>

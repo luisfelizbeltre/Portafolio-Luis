@@ -13,7 +13,14 @@
       <div class="hero-text">
           <!-- Texto animado -->
         <h2 class="fade-in">Luis Eduardo</h2>
-        <p class="slide-up">Desarrollador Full Stack</p>
+        <p class="slide-up">
+  <span>D</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span> <span></span>
+  <span>F</span><span>u</span><span>l</span><span>l</span> <span></span>
+  <span>S</span><span>t</span><span>a</span><span>c</span><span>k</span>
+</p>
+
+        <p>
+       Con formación en SMR y DAW. Experiencia en desarrollo de software e implementación tecnológica.</p>
 
         <!-- Redes sociales -->
         <div class="social-links">
@@ -36,7 +43,7 @@
       </div>
     </div>
   </div>
-
+  
   </section>
 </template>
 
@@ -59,8 +66,7 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   height: 2000px;
-  
-  max-height: 50vh;
+  max-height: 75vh;
 }
 
 /* ===== Contenedor Hero ===== */
@@ -129,7 +135,7 @@ p {
 /* ===== Botón de Descarga CV ===== */
 .btn {
   display: inline-block;
-  background: #f1c40f;
+  background: #0fc209;
   color: #000;
   font-weight: bold;
   padding: 0.8rem 1.5rem;
@@ -139,7 +145,7 @@ p {
 }
 
 .btn:hover {
-  background: #d4ac0d;
+  background: #98d40d;
   transform: scale(1.1);
 }
 
@@ -172,11 +178,6 @@ p {
 .fade-in {
   opacity: 0;
   animation: fadeIn 1.5s forwards;
-}
-
-.slide-up {
-  opacity: 0;
-  animation: slideUp 1.5s forwards;
 }
 
 @keyframes fadeIn {
@@ -229,14 +230,66 @@ p{
 
 
 
-@keyframes slideUp {
+
+@keyframes fadeInColor {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    color: #020202; /* Color inicial más apagado */
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    color: #10c06e; /* Color final (negro o el que prefieras) */
   }
 }
+@keyframes colorCycle {
+  0% {color:#ff5733;}
+  25% {color:#33ff57;}
+  50% {color:#3357ff;}
+  75% {color:#ff33a6;}
+  100% {color:#ff5733;}
+  
+}
+
+
+.slide-up {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.slide-up span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards, colorCycle 5s infinite alternate ease-in-out;
+}
+
+/* Animación progresiva letra por letra */
+.slide-up span:nth-child(1) { animation-delay: 0s; }
+.slide-up span:nth-child(2) { animation-delay: 0.1s; }
+.slide-up span:nth-child(3) { animation-delay: 0.2s; }
+.slide-up span:nth-child(4) { animation-delay: 0.3s; }
+.slide-up span:nth-child(5) { animation-delay: 0.4s; }
+.slide-up span:nth-child(6) { animation-delay: 0.5s; }
+.slide-up span:nth-child(7) { animation-delay: 0.6s; }
+.slide-up span:nth-child(8) { animation-delay: 0.7s; }
+.slide-up span:nth-child(9) { animation-delay: 0.8s; }
+.slide-up span:nth-child(10) { animation-delay: 0.9s; }
+.slide-up span:nth-child(11) { animation-delay: 1s; }
+.slide-up span:nth-child(12) { animation-delay: 1.1s; }
+.slide-up span:nth-child(13) { animation-delay: 1.2s; }
+.slide-up span:nth-child(14) { animation-delay: 1.3s; }
+.slide-up span:nth-child(15) { animation-delay: 1.4s; }
+.slide-up span:nth-child(16) { animation-delay: 1.5s; }
+.slide-up span:nth-child(17) { animation-delay: 1.6s; }
+.slide-up span:nth-child(18) { animation-delay: 1.7s; }
+.slide-up span:nth-child(19) { animation-delay: 1.8s; }
+.slide-up span:nth-child(20) { animation-delay: 1.9s; }
+.slide-up span:nth-child(21) { animation-delay: 2s; }
+.slide-up span:nth-child(22) { animation-delay: 2.1s; }
+.slide-up span:nth-child(23) { animation-delay: 2.2s; }
+.slide-up span:nth-child(24) { animation-delay: 2.3s; }
+
+
+
 </style>

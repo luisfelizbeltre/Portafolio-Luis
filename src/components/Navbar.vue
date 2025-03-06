@@ -10,27 +10,37 @@
       <nav :class="{ open: menuOpen }">
         <ul>
           <li>
-            <a href="#hero" @click="closeMenu">
+            <a href="#hero" @click="closeMenu" :class="{ active: activeSection === 'hero' } "> 
               <LucideHome class="icon" /> Inicio
             </a>
           </li>
+          
+<!--educacion -->
           <li>
-            <a href="#about" @click="closeMenu">
-              <LucideUser class="icon" /> Sobre mí
+            <a href="#education" @click="closeMenu" :class="{ active: activeSection === 'education' }">
+              <LucideCode class="icon" /> Educación
             </a>
+            
           </li>
+
+        
           <li>
-            <a href="#projects" @click="closeMenu">
+            <a href="#projects" @click="closeMenu" :class="{ active: activeSection === 'projects' }">
               <LucideCode class="icon" /> Proyectos
             </a>
           </li>
           <li>
-            <a href="#skills" @click="closeMenu">
+            <a href="#about" @click="closeMenu"  :class="{ active: activeSection === 'about' }">
+              <LucideUser class="icon" /> Sobre mí
+            </a>
+          </li>
+          <li>
+            <a href="#skills" @click="closeMenu" :class="{ active: activeSection === 'skills' }">
               <LucideCpu class="icon" /> Habilidades
             </a>
           </li>
           <li>
-            <a href="#contact" @click="closeMenu">
+            <a href="#contact" @click="closeMenu" :class="{ active: activeSection === 'contact' }">
               <LucideMail class="icon" /> Contacto
             </a>
           </li>
@@ -47,7 +57,7 @@
 </template>
 
 <script setup>
-import { ref,onMounted } from "vue";
+import { ref,onMounted, onUnmounted } from "vue";
 import {
   LucideHome,
   LucideUser,
@@ -56,6 +66,7 @@ import {
   LucideMail,
   LucideMenu,
   LucideX,
+  ZoomOut,
 } from "lucide-vue-next"; // Importando iconos
 
 const menuOpen = ref(false);
@@ -67,6 +78,31 @@ const toggleMenu = () => {
 const closeMenu = () => {
   menuOpen.value = false;
 };
+
+const activeSection =ref("");
+
+const updateActiveSection = () => {
+  const sections = document.querySelectorAll("section");
+
+  const scrollPosition = window.scrollY+100;
+
+  sections.forEach((section) =>{
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    if(scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight){
+      activeSection.value = section.id;
+    }
+  })
+}
+onMounted(() => {
+  window.addEventListener("scroll", updateActiveSection);
+  updateActiveSection();
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", updateActiveSection);
+});
 </script>
 
 <style scoped>
@@ -81,7 +117,9 @@ const closeMenu = () => {
   transition: background 0.3s ease;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
+.active{
+  color: #ff3333;
+} 
 /* Logo */
 .logo {
   font-size: 1.8rem;
@@ -115,7 +153,12 @@ a {
   
 }
 
-
+nav ul li a.active {
+  color: #33ff57; /* Verde cuando está activo */
+  font-weight: bold;
+  transform: scale(1.4);
+  transition: transform 0.3s ease;
+}
 a:hover {
   color: #2ecc71;
   transform: scale(1.2);
@@ -123,6 +166,10 @@ a:hover {
 
 }
 
+.zoom-out{
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
 
 
 

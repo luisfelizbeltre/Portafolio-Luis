@@ -2,74 +2,47 @@
 import { LucidePhone, LucideMail } from 'lucide-vue-next';
 
 const year = new Date().getFullYear();
-const phoneNumber = "+34 634 718 864";  // Número de teléfono
-const email = "dev@luiseduardodev.com";  
 </script>
 
 <template>
-  <footer class="footer">
+  <footer class="footer">  
     <div class="container">
-      <!-- Texto de copyright con el año actual -->
       <p>&copy; {{ year }} Desarrollado con ❤️ por Luis Eduardo</p>
-      
-      <div class="contact-info">
-        <!-- Información de contacto con iconos -->
-        <p>
-          <LucidePhone class="icon" /> <strong>Teléfono:</strong> {{ phoneNumber }}
-        </p>
-        <p>
-          <LucideMail class="icon" /> <strong>Correo:</strong>
-          <a :href="'mailto:' + email">{{ email }}</a>
-        </p>
-      </div>
+
     </div>
+
+    
   </footer>
 </template>
 
 <style scoped>
+/* Footer solo ocupa el espacio necesario */
 .footer {
+  width: 100%;
+  background-color:rgb(18 18 18 / 23%);
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
-  font-size: 14px;
+  padding:  0;
 }
 
+/* Contenedor ocupa todo el espacio dentro del footer */
 .container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 60%;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  padding: 1rem;
+border-radius: 70px 70px 0 0;
 }
 
 
 
+/* Texto sin márgenes adicionales */
 .footer p {
   margin: 0;
+  font-size: 1.5rem;
 }
 
-/* ===== Contacto ===== */
-.contact-info {
-  margin-top: 1rem;
-  display: inline;
-}
-
-.contact-info p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  font-size: 1.1rem;
-  color: #000000;
-}
-
-.contact-info a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Íconos ===== */
+/* Íconos */
 .icon {
   width: 24px;
   height: 24px;

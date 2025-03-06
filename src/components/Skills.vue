@@ -1,3 +1,44 @@
+
+
+<template>
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Habilidades</h2>
+
+      <div class="skills-grid">
+        <div v-for="(category, index) in skillCategories" :key="index" class="skill-category" style="margin-top:100px ;">
+          <h3>{{ category.title }}</h3>
+          <div class="skill-list">
+            <div v-for="(skill, sIndex) in category.skills" :key="sIndex" class="skill"  data-aos="fade-up"
+              data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+              data-aos-mirror="true" data-aos-once="false">
+              <i :class="skill.icon"></i>
+              <span>{{ skill.name }}</span>
+
+            </div>
+          </div>
+        </div>
+        <template v-if="showHidden">
+          <div v-for="(category, index) in hiddenCategories" :key="'hidden-' + index" class="skill-category">
+            <h3>{{ category.title }}</h3>
+            <div class="skill-list">
+              <div v-for="(skill, sIndex) in category.skills" :key="'hidden-skill-' + sIndex" class="skill"
+                data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+                <i :class="skill.icon"></i>
+                <span>{{ skill.name }}</span>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <button @click="toggleHiddenCategories" class="toggle-button">
+        {{ showHidden ? "Ver menos" : "Ver más" }}
+      </button>
+    </div>
+  </section>
+</template>
 <script setup>
 import { ref } from "vue";
 
@@ -59,44 +100,6 @@ const toggleHiddenCategories = () => {
   showHidden.value = !showHidden.value;
 };
 </script>
-
-<template>
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2>Habilidades</h2>
-
-      <div class="skills-grid">
-        <div v-for="(category, index) in skillCategories" :key="index" class="skill-category">
-          <h3>{{ category.title }}</h3>
-          <div class="skill-list">
-            <div v-for="(skill, sIndex) in category.skills" :key="sIndex" class="skill">
-              <i :class="skill.icon"></i>
-              <span>{{ skill.name }}</span>
-              
-            </div>
-          </div>
-        </div>
-
-        <template v-if="showHidden">
-          <div v-for="(category, index) in hiddenCategories" :key="'hidden-' + index" class="skill-category">
-            <h3>{{ category.title }}</h3>
-            <div class="skill-list">
-              <div v-for="(skill, sIndex) in category.skills" :key="'hidden-skill-' + sIndex" class="skill">
-                <i :class="skill.icon"></i>
-                <span>{{ skill.name }}</span>
-              </div>
-            </div>
-          </div>
-        </template>
-      </div>
-
-      <button @click="toggleHiddenCategories" class="toggle-button">
-        {{ showHidden ? "Ver menos" : "Ver más" }}
-      </button>
-    </div>
-  </section>
-</template>
-
 <style scoped>
 .skills {
 
@@ -105,14 +108,16 @@ const toggleHiddenCategories = () => {
   transition: transform 0.1s ease, background 0.3s ease;
 }
 
-.skill:hover{
+.skill:hover {
   transform: scale(1.2);
-  cursor:default
+  cursor: default
 }
 
 h2 {
   margin-bottom: 1rem;
-  color: #3498db;
+  color: #0acc3b;
+  font-size: 1.5em;
+
 }
 
 .skills-grid {
@@ -122,46 +127,49 @@ h2 {
   padding: 20px;
 }
 
-.skills .skill-category {
+.skill-category {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.4s ease;
 }
-.skill-category:hover{
-  transform: translateY(-5px);}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
 
 .skills .skill-category h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #3498db;
 }
 
-.skills .skill-category .skill-list {
-  display: flex;
-  flex-direction:row;
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-.skills .skill-category .skill-list .skill {
+.skill {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.skills .skill-category .skill-list .skill i {
-  font-size: 1.5rem;
+.skill i {
+  font-size: 1.7rem;
 }
 
-.skills .skill-category .skill-list .skill span {
+.skill span {
   font-size: 1rem;
   font-weight: bold;
-color: white;
+  color: white;
 }
 
-.skills .skill-category .skill-list .skill .skill-level {
+.skill-level {
   flex-grow: 1;
   height: 8px;
   background-color: #e1f0f9;
@@ -170,7 +178,7 @@ color: white;
   overflow: hidden;
 }
 
-.skills .skill-category .skill-list .skill .skill-level::after {
+.skill-level::after {
   content: "";
   position: absolute;
   top: 0;
