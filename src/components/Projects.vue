@@ -42,30 +42,43 @@ const proyectos = [
       { name: "JavaScript", icon: "/jwt.png" }
     ]
     
-  },
-  {
-  nombre: "Quiz App en Spring Boot",
-  descripcion: "Aplicación de cuestionarios interactivos desarrollada con Spring Boot, que permite crear, gestionar y responder preguntas en tiempo real.",
-  link: "https://github.com/tu-repo",
-  image: "/projectsync.png",
-  skills: [
-    { name: "Spring Boot", icon: "devicon-spring-plain colored" },
-    { name: "Thymeleaf", icon: "devicon-html5-plain colored" },
-    { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
-    { name :"MySQL", icon: "devicon-mysql-plain colored" }
-  ]
-},{
-  nombre: "Quiz App en Spring Boot",
-  descripcion: "Aplicación de cuestionarios interactivos desarrollada con Spring Boot, que permite crear, gestionar y responder preguntas en tiempo real.",
+  },{
+  nombre: "Tienda de Reparaciones",
+  descripcion: "Aplicación web para la gestión de una tienda de reparaciones de dispositivos electrónicos, desarrollada con React",
+
   link: "https://github.com/tu-repo",
   image: "/doctorvoltio.png",
   skills: [
+    { name: "React", icon: "devicon-react-original colored" },
+    { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+    { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+    { name: "Express", icon: "devicon-express-original colored" }
+  ]
+},{
+  nombre: "Sring Quiz",
+  descripcion: "Aplicación web desarrollada con Spring Boot en el backend y Bootstrap en el frontend. Permite gestionar tareas y proyectos colaborativos, con autenticación de usuarios, paneles administrativos y persistencia en base de datos.",
+  link: "https://github.com/tu-usuario/springboot-bootstrap-app",
+  image: "/quiz.png",
+  skills: [
     { name: "Spring Boot", icon: "devicon-spring-plain colored" },
-    { name: "Thymeleaf", icon: "devicon-html5-plain colored" },
     { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
-    { name :"MySQL", icon: "devicon-mysql-plain colored" }
+    { name: "Thymeleaf", icon: "devicon-thymeleaf-plain colored" },
+    { name: "H2 Database", icon: "devicon-h2-plain colored" },
+    { name: "JPA", icon: "devicon-jpa-plain colored" }
+  ]
+},
+  {nombre: "MemoraCaps",
+  descripcion: "Aplicación para crear cápsulas digitales de recuerdos con multimedia, NFC y funciones colaborativas/heredables, desarrollada con Laravel y Vue 3.",
+  link: "https://github.com/tu-usuario/memora-caps",
+  image: "/memora caps.png",
+  skills: [
+    { name: "Laravel", icon: "devicon-laravel-plain colored" },
+    { name: "Vue 3", icon: "devicon-vuejs-plain colored" },
+    { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
+    { name: "MySQL", icon: "devicon-mysql-plain colored" }
   ]
 }
+
 ];
 </script>
 
@@ -133,7 +146,7 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat( 3,1fr);
   gap: 1.5rem;
   padding: 20px;
 
@@ -147,7 +160,7 @@ h3 {
 p {
   margin-bottom: 1rem;
   color : white;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .btn {
@@ -166,5 +179,19 @@ p {
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+  }
+}
+
+/* Ajuste para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
 }
 </style>
