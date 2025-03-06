@@ -79,14 +79,7 @@ hr {
 }
 
 /* ===== Título con animación ===== */
-h2 {
-  font-size: 2rem;
-  color: #3498db;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  opacity: 0;
-  animation: fadeIn 1.5s forwards;
-}
+
 
 /* ===== Tarjeta de información ===== */
 .about-card {

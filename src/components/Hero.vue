@@ -11,7 +11,7 @@
           </div>
           <div class="hero-text">
             <!-- Texto animado -->
-            <h2 class="fade-in">Luis Eduardo</h2>
+            <h1 class="fade-in">Luis Eduardo</h1>
             <p class="slide-up">
               <span>D</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span>  <span></span>
              
@@ -120,7 +120,7 @@ onMounted(() => {
 }
 
 /* ===== Texto Hero ===== */
-h2 {
+h1{
   font-size: 4.5rem;
   margin-bottom: 0.5rem;
 }

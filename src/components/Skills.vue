@@ -2,6 +2,9 @@
 
 <template>
   <section id="skills" class="skills">
+    <div class="father">
+
+    
     <div class="container">
       <h2>Habilidades</h2>
 
@@ -37,6 +40,7 @@
         {{ showHidden ? "Ver menos" : "Ver más" }}
       </button>
     </div>
+  </div>
   </section>
 </template>
 <script setup>
@@ -101,23 +105,17 @@ const toggleHiddenCategories = () => {
 };
 </script>
 <style scoped>
-.skills {
 
+.container {
   padding: 2rem 0;
   text-align: center;
   transition: transform 0.1s ease, background 0.3s ease;
+  background-color: #020202b9; /* Fondo oscuro coherente */
 }
 
 .skill:hover {
   transform: scale(1.2);
-  cursor: default
-}
-
-h2 {
-  margin-bottom: 1rem;
-  color: #0a85cc;
-  font-size: 1.5em;
-
+  cursor: default;
 }
 
 .skills-grid {
@@ -133,6 +131,7 @@ h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.4s ease;
+  background-color: #171816; /* Fondo oscuro coherente */
 }
 
 .skill-category:hover {
@@ -142,13 +141,12 @@ h2 {
 .skills .skill-category h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: #3498db;
+  color: #2ecc71; /* Verde unificado */
 }
 
 .skill-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -166,13 +164,13 @@ h2 {
 .skill span {
   font-size: 1rem;
   font-weight: bold;
-  color: white;
+  color: #e0e0e0; /* Blanco suavizado */
 }
 
 .skill-level {
   flex-grow: 1;
   height: 8px;
-  background-color: #e1f0f9;
+  background-color: #e0e0e0; /* Fondo claro suavizado */
   border-radius: 4px;
   position: relative;
   overflow: hidden;
@@ -185,14 +183,14 @@ h2 {
   left: 0;
   height: 100%;
   width: var(--level);
-  background-color: #3498db;
+  background-color: #2ecc71; /* Verde unificado */
   border-radius: 4px;
   transition: width 0.5s ease;
 }
 
 .toggle-button {
-  background-color: #007bff;
-  color: white;
+  background-color: #3498db; /* Azul unificado */
+  color: #e0e0e0; /* Blanco suavizado */
   padding: 10px 15px;
   border: none;
   cursor: pointer;
@@ -202,6 +200,6 @@ h2 {
 }
 
 .toggle-button:hover {
-  background-color: #0056b3;
+  background-color: #2ecc71; /* Verde al hover para cohesión */
 }
 </style>

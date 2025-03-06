@@ -92,7 +92,7 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .skill i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .skill:hover{
   transform: scale(1.2);
@@ -117,7 +117,7 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: black;
+  background-color: #0f100f;
   border: 1px solid #ffffff8e;
   
 
@@ -129,10 +129,7 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-h2 {
-  margin-bottom: 1rem;
-  color: #3498db;
-}
+
 
 .project-grid {
   display: grid;
@@ -144,12 +141,13 @@ h2 {
 
 h3 {
   margin-bottom: 0.5rem;
-  color: #38db34;
+  color: #2ecc71;
 }
 
 p {
   margin-bottom: 1rem;
   color : white;
+  font-size: 1.1rem;
 }
 
 .btn {
