@@ -55,18 +55,19 @@ const proyectos = [
     { name: "Express", icon: "devicon-express-original colored" }
   ]
 },{
-  nombre: "Sring Quiz",
-  descripcion: "Aplicación web desarrollada con Spring Boot en el backend y Bootstrap en el frontend. Permite gestionar tareas y proyectos colaborativos, con autenticación de usuarios, paneles administrativos y persistencia en base de datos.",
+  nombre: "Spring Quiz",
+  descripcion: "Aplicación web tipo quiz desarrollada con Spring Boot en el backend y Thymeleaf en el frontend. Permite a los usuarios responder preguntas para obtener una puntuación y descubrir su animal espiritual. También registra las jugadas de los jugadores y muestra estadísticas.",
   link: "https://github.com/tu-usuario/springboot-bootstrap-app",
   image: "/quiz.png",
   skills: [
     { name: "Spring Boot", icon: "devicon-spring-plain colored" },
-    { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
     { name: "Thymeleaf", icon: "devicon-thymeleaf-plain colored" },
+    { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
     { name: "H2 Database", icon: "devicon-h2-plain colored" },
     { name: "JPA", icon: "devicon-jpa-plain colored" }
   ]
-},
+}
+,
   {nombre: "MemoraCaps",
   descripcion: "Aplicación para crear cápsulas digitales de recuerdos con multimedia, NFC y funciones colaborativas/heredables, desarrollada con Laravel y Vue 3.",
   link: "https://github.com/tu-usuario/memora-caps",
