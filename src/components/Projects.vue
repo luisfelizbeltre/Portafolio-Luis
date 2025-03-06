@@ -31,7 +31,7 @@ const proyectos = [
 {
     nombre: "ProjectSync",
     descripcion: "ProjectSync es una aplicación web para la gestión de tareas, desarrollada con Spring Boot, JWT y Vue.js, con soporte multi-tenant y actualizaciones en tiempo real. 🚀",
-    link: "https://projectsync.com",
+    link: "https://github.com/luisfelizbeltre/GestionTareaVue",
     image:"/projectsync.png",
     skills: [
       { name: "Bootstrap", icon: "devicon-bootstrap-plain colored"},
@@ -46,7 +46,7 @@ const proyectos = [
   nombre: "Tienda de Reparaciones",
   descripcion: "Aplicación web para la gestión de una tienda de reparaciones de dispositivos electrónicos, desarrollada con React",
 
-  link: "https://github.com/tu-repo",
+  link: "https://github.com/luisfelizbeltre/clinicatech",
   image: "/doctorvoltio.png",
   skills: [
     { name: "React", icon: "devicon-react-original colored" },
@@ -57,7 +57,7 @@ const proyectos = [
 },{
   nombre: "Spring Quiz",
   descripcion: "Aplicación web tipo quiz desarrollada con Spring Boot en el backend y Thymeleaf en el frontend. Permite a los usuarios responder preguntas para obtener una puntuación y descubrir su animal espiritual. También registra las jugadas de los jugadores y muestra estadísticas.",
-  link: "https://github.com/tu-usuario/springboot-bootstrap-app",
+  link: "https://github.com/luisfelizbeltre/quiz",
   image: "/quiz.png",
   skills: [
     { name: "Spring Boot", icon: "devicon-spring-plain colored" },
