@@ -1,3 +1,29 @@
+
+
+<template>
+  <section id="education" class="education">
+    <div class="container">
+      <h2>Educación</h2>
+      <hr>
+      <div class="education-grid">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" v-for="(edu, index) in educationData" :key="index" class="education-item">
+          <i :class="edu.icon"></i>
+          <h3>{{ edu.title }}</h3>
+         
+          <p>{{ edu.institution }}</p>
+          <p>{{ edu.description }}</p>
+          <p>{{ edu.additionalInfo }}</p>
+          <div>
+            <p class="date">{{ edu.date }}</p>
+
+          </div>
+       
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
 <script setup>
 const educationData = [
   {
@@ -24,26 +50,6 @@ const educationData = [
   }
 ];
 </script>
-
-<template>
-  <section id="education" class="education">
-    <div class="container">
-      <h2>Educación</h2>
-      <hr>
-      <div class="education-grid">
-        <div data-aos="zoom-in-up" data-aos-duration="1000" v-for="(edu, index) in educationData" :key="index" class="education-item">
-          <i :class="edu.icon"></i>
-          <h3>{{ edu.title }}</h3>
-         
-          <p>{{ edu.institution }}</p>
-          <p>{{ edu.description }}</p>
-          <p>{{ edu.additionalInfo }}</p>
-          <p class="date">{{ edu.date }}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
 
 <style scoped>
 hr{
@@ -112,10 +118,11 @@ h3 {
   margin-bottom: 0.5rem;
   color: #ffffff;
 }
-p {
+.education-item >p {
   font-size: 1.4rem;
   color: white;
   margin-bottom: 0.5rem;
+  padding-left: 10px;
 }
 
 /* ===== Media Queries ===== */
@@ -125,4 +132,5 @@ p {
   width: 100%;
   }
 }
+
 </style>

@@ -5,10 +5,14 @@
       <div class="about-card slide-up">
         <hr>
         <div class="about-content">
-          <div class="about-image">
+          <div data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+          class="about-image">
             <img src="/imagenprueba.jpg" alt="Sobre mi imagen">
           </div>
-          <div class="about-text">
+          <div data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+             class="about-text">
             <p>
               Desarrollador web con formación en SMR y DAW, y experiencia en
               desarrollo Full Stack e implementación de soluciones tecnológicas. Destaco
@@ -46,11 +50,12 @@ onMounted(() => {
   min-width: 300px;
   text-align: left;
   font-size: 1.2rem;
+  align-self: flex-start;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
   border-radius: 8px;
 }
@@ -106,6 +111,7 @@ h2 {
     flex-direction: column;
     text-align: center;
   }
+
   .about-text {
     text-align: center;
   }
@@ -116,6 +122,7 @@ h2 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
