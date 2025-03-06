@@ -96,7 +96,7 @@ i {
 
 .date {
   font-size: 0.9rem;
-  color: #34db4a;
+  color: #34db34b4;
   font-weight: bold;
 }
 
@@ -116,11 +116,11 @@ h2 {
 h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #ffffff;
+  color: #25bd32;
 }
-.education-item >p {
+.education-item> p {
   font-size: 1.4rem;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
   padding-left: 10px;
 }

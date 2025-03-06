@@ -64,7 +64,7 @@
   .section-title {
     font-size: 2rem;
     font-weight: bold;
-    color: #2563eb;
+    color: #1479d8;
     margin-bottom: 2rem;
   }
   
@@ -81,7 +81,7 @@
   
   .contact-subtitle {
     font-size: 1.25rem;
-    color: #4b5563;
+    color: #2cb132;
     margin-bottom: 1.5rem;
     font-weight: 600;
   }
@@ -126,7 +126,7 @@
   
   .contact-item p {
     font-size: 1.125rem;
-    color: #6b7280;
+    color: #6b8070;
   }
   
   .divider {

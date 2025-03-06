@@ -115,7 +115,7 @@ const toggleHiddenCategories = () => {
 
 h2 {
   margin-bottom: 1rem;
-  color: #0acc3b;
+  color: #0a85cc;
   font-size: 1.5em;
 
 }

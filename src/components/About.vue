@@ -70,9 +70,12 @@ hr {
 
 /* ===== Contenedor ===== */
 .container {
-  max-width: 90%;
+  max-width: 1000%;
   margin: 0 auto;
   padding: 20px;
+  background-color: #171816;
+  border-radius: 50px;
+
 }
 
 /* ===== Título con animación ===== */
