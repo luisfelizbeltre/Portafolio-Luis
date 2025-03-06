@@ -31,10 +31,10 @@
   
           <!-- Redes Sociales -->
           <div class="social-links">
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+            <a href="www.linkedin.com/in/luiseduardofb" target="_blank" class="social-icon">
               <i class=" social-icon devicon-linkedin-plain"></i>
             </a>
-            <a href="https://github.com" target="_blank" class="social-icon">
+            <a href="https://github.com/luisfelizbeltre" target="_blank" class="social-icon">
               <i class="social-icon devicon-github-original"></i>
             </a>
             <a href="https://twitter.com" target="_blank" class="social-icon">
