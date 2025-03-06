@@ -90,7 +90,7 @@ i {
 
 .date {
   font-size: 0.9rem;
-  color: #34db42;
+  color: #34db4a;
   font-weight: bold;
 }
 

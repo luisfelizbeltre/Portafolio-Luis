@@ -140,7 +140,7 @@ h2 {
 }
 
 .skills .skill-category h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   color: #3498db;
 }

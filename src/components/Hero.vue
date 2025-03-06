@@ -264,6 +264,7 @@ p{
   animation: fadeIn 0.5s ease-in-out forwards, colorCycle 5s infinite alternate ease-in-out;
 }
 
+
 /* Animación progresiva letra por letra */
 .slide-up span:nth-child(1) { animation-delay: 0s; }
 .slide-up span:nth-child(2) { animation-delay: 0.1s; }
