@@ -47,21 +47,22 @@ onMounted(() => {
 <style scoped>
 /* ===== Sección Sobre Mí ===== */
 .about-content {
+
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 1000px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .about-text {
   flex: 1;
-  min-width: 400px;
   text-align: left;
   font-size: 1.2rem;
-  align-self: flex-start;
+  max-width: 40%;
 }
 
 .about-image img {
@@ -81,7 +82,9 @@ hr {
 
 /* ===== Contenedor ===== */
 .container {
-  max-width: 1000%;
+  height: auto;
+
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
   background-color: #171816;
@@ -104,6 +107,8 @@ hr {
   text-align: left;
   color: white;
   max-width: 100%;
+  width: 100%;
+
 }
 
 /* Aparece con animación */
@@ -125,6 +130,8 @@ hr {
 
   .about-text {
     text-align: center;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
