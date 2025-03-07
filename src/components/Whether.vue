@@ -16,7 +16,6 @@
 import { ref, onMounted } from "vue";
 import axios from "axios";
 
-const apiKey = "7236d717745a5f7b9f17fb3920e460c8"; // Reemplaza con tu clave API
 const city = "Madrid,es"; // Ciudad de Madrid, España
 const iconUrl = ref(null);
 // Función para obtener el clima
