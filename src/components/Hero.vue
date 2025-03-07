@@ -2,18 +2,18 @@
   <section id="hero" class="hero">
     <div class="container">
       <div class="hero-content">
-        
+
         <div class="hero-grid">
-        
+
           <div data-aos="face-up" data-aos-duration="3000" class="img-container">
-            
+
             <nuxt-img src="/image.png" format="webp" />
 
             <img src="/luisfoto.webp" alt="Foto de [luis]" class="hero-img" loading="lazy" />
           </div>
           <div class="hero-text">
             <!-- Texto animado -->
-            
+
             <h1 class="fade-in">Luis Eduardo</h1>
             <p class="slide-up">
               <span>D</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span>
@@ -26,39 +26,38 @@
             <p>
               Con formación en SMR y DAW. Experiencia en desarrollo de software e implementación tecnológica.</p>
 
-            <!-- Redes sociales -->
             <div class="social-links">
-              <a href="https://github.com/" target="_blank" class="social-btn">
+              <a href="https://github.com/" target="_blank" class="social-btn" aria-label="Visit GitHub profile">
                 <LucideGithub class="icon" />
               </a>
-              <a href="https://linkedin.com/in/" target="_blank" class="social-btn">
+              <a href="https://linkedin.com/in/" target="_blank" class="social-btn" aria-label="Visit LinkedIn profile">
                 <LucideLinkedin class="icon" />
               </a>
-              <a href="" class="social-btn">
+              <a href="mailto:example@example.com" class="social-btn" aria-label="Send an email">
                 <LucideMail class="icon" />
               </a>
             </div>
 
           </div>
-          
+
 
           <!-- Botón de descarga -->
           <a href="/luiss CV 2025.pdf" download class="btn">Descargar CV
-            <i class="fa-regular fa-file-pdf"></i>          </a>
-         
+            <i class="fa-regular fa-file-pdf"></i> </a>
+
         </div>
-        
-       
-      </div> 
-      
-         
-  
+
+
+      </div>
+
+
+
     </div>
-   
+
   </section>
   <div class="quotes">
-            <Quotes />
-          </div> 
+    <Quotes />
+  </div>
 </template>
 
 <script setup>
@@ -198,7 +197,8 @@ p {
   opacity: 0;
   animation: fadeIn 1.5s forwards;
 }
-.whether{
+
+.whether {
   float: right;
   position: absolute;
   top: 150px;
@@ -206,16 +206,19 @@ p {
   color: #6da37062;
 
 }
-.quotes{
+
+.quotes {
 
   margin-bottom: 0;
-  color: #eeeeee; /* Verde unificado */
+  color: #eeeeee;
+  /* Verde unificado */
   padding-bottom: 0;
   box-sizing: border-box;
   font-size: 1.3rem;
   font-family: "Times New Roman", serif;
 
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -228,7 +231,7 @@ p {
 
 /* Menú responsivo */
 @media (max-width: 768px) {
-  
+
   .social-links {
     margin-top: -10px;
     margin-bottom: 0;
@@ -447,6 +450,7 @@ p {
 .slide-up span:nth-child(30) {
   animation-delay: 3.9s;
 }
+
 /* ===== Hero Section ===== */
 .hero {
   color: #fff;
@@ -455,8 +459,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto; /* Cambiado a auto para móviles */
-  min-height: 79vh; /* Asegura que ocupe al menos el 100% de la altura de la pantalla */
+  height: auto;
+  /* Cambiado a auto para móviles */
+  min-height: 79vh;
+  /* Asegura que ocupe al menos el 100% de la altura de la pantalla */
 }
 
 /* ===== Contenedor Hero ===== */
@@ -591,6 +597,7 @@ p {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -600,28 +607,28 @@ p {
 @media (max-width: 768px) {
   .hero {
     padding: 2rem 0;
-    height: auto; 
+    height: auto;
   }
 
   .hero-grid {
-    flex-direction: column; 
-    gap: 1rem; 
+    flex-direction: column;
+    gap: 1rem;
   }
-  .social-links
-  {
+
+  .social-links {
     margin-top: -10px;
     margin-bottom: 0;
     display: inline-flex;
   }
 
   .img-container {
-    width: 150px; 
+    width: 150px;
     height: 150px;
   }
 
   .hero-text {
-    text-align: center; 
-    max-width: 100%; 
+    text-align: center;
+    max-width: 100%;
   }
 
   h1 {
@@ -629,21 +636,21 @@ p {
   }
 
   p {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .btn {
-    padding: 0.6rem 1.2rem; 
+    padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
   }
 
   .social-links {
-    gap: 0.5rem; 
+    gap: 0.5rem;
     margin-bottom: 1rem;
   }
 
   .whether {
-    position: absolute; 
+    position: absolute;
     top: 40;
     margin-top: 1rem;
     text-align: center;
