@@ -76,6 +76,7 @@
     max-width: 800px;
     margin: 0 auto;
     border: solid 1px rgba(255, 255, 255, 0.74);
+    user-select: all;
 
   }
   
