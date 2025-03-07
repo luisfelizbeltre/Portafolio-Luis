@@ -31,13 +31,13 @@
 
         <!-- Redes Sociales -->
         <div class="social-links">
-          <a href="www.linkedin.com/in/luiseduardofb" target="_blank" class="social-icon">
+          <a href="www.linkedin.com/in/luiseduardofb" target="_blank" class="social-icon" aria-label="Visit my linkedim">
             <i class=" social-icon devicon-linkedin-plain"></i>
           </a>
-          <a href="https://github.com/luisfelizbeltre" target="_blank" class="social-icon">
+          <a href="https://github.com/luisfelizbeltre" target="_blank" class="social-icon" aria-label="Visit my github">
             <i class="social-icon devicon-github-original"></i>
           </a>
-          <a href="https://twitter.com" target="_blank" class="social-icon">
+          <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Visit my twitter">
             <i class="social-icon devicon-twitter-original"></i>
           </a>
         </div>
