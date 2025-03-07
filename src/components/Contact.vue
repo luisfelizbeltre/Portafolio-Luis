@@ -4,7 +4,7 @@
       <h2 class="section-title">Contacto</h2>
 
       <div class="contact-box">
-        <h4 class="contact-subtitle">¡Hablemos!</h4>
+        <h3 class="contact-subtitle">¡Hablemos!</h3>
 
         <!-- Información de contacto -->
         <div class="contact-items">
