@@ -35,7 +35,7 @@ onMounted(() => {
 const getRandomQuote = () => {
 
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    quote.value = quotes[randomIndex].content+" - "+quotes[randomIndex].author;
+    quote.value = "“"+quotes[randomIndex].content+"”"+" - "+quotes[randomIndex].author;
 }
 
 </script>
