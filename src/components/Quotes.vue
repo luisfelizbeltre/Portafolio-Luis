@@ -8,13 +8,13 @@
 
                     </p>
                     
-                    <a @click="getRandomQuote" class="refresh-icon">
+                    <p @click="getRandomQuote" class="refresh-icon">
 
                         <i class="fas fa-sync-alt"></i>
 
 
 
-                    </a>
+                    </p>
 
                 </div>
             </div>
