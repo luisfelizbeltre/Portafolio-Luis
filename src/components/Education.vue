@@ -35,7 +35,7 @@ const educationData = [
     additionalInfo: "Proyecto final sobre e-commerce con Vue y Node.js."
   },
   {
-    icon: 'fas fa-certificate',
+    icon: 'fas fa-graduation-cap',
     title: 'Grado Medio Sistema Microinformatico y Redes',
     institution: 'IES Francisco de Goya',
     date: '2020 - 2022',

@@ -7,7 +7,7 @@
         <div class="about-content">
           <div data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
             data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
-          class="about-image">
+             class="about-image">
             <img src="/imagenprueba.jpg" alt="Sobre mi imagen">
           </div>
           <div data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
@@ -15,11 +15,20 @@
              class="about-text">
             <p>
               Desarrollador web con formación en SMR y DAW, y experiencia en
-              desarrollo Full Stack e implementación de soluciones tecnológicas. Destaco
+              desarrollo Full Stack e implementación de soluciones tecnológicas.
+              <br />
+              <hr class="divider">
+              <br>
+              Destaco
               por mis habilidades en resolución de problemas, organización y trabajo en
               equipo, adquiridas en proyectos de software y el sector logístico.
               Apasionado por la tecnología, busco seguir creciendo en el sector IT.
             </p>
+            <hr class="divider">
+            <p>Nombre: Luis Eduardo</p>
+            <p>Edad: 23 años</p>
+            <p>Ubicación: Madrid, España</p>
+            
           </div>
         </div>
       </div>
@@ -41,13 +50,15 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
   flex-wrap: wrap;
   gap: 20px;
+  max-width: 1000px;
 }
 
 .about-text {
   flex: 1;
-  min-width: 300px;
+  min-width: 400px;
   text-align: left;
   font-size: 1.2rem;
   align-self: flex-start;
@@ -100,7 +111,11 @@ hr {
   opacity: 1;
   transform: translateY(0);
 }
-
+.divider{
+  max-width: 200px;
+  margin-top: 30px;
+ margin-left: 0;
+}
 /* ===== Media Queries ===== */
 @media (max-width: 768px) {
   .about-content {
