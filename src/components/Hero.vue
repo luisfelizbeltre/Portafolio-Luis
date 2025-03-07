@@ -81,7 +81,7 @@ onMounted(() => {
   justify-content: center;
   height: 2000px;
   max-height: 60vh;
-  background-color: #000;
+  background-color: #00000081;
 }
 
 /* ===== Contenedor Hero ===== */
