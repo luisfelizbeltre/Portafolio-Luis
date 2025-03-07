@@ -144,7 +144,7 @@ onMounted(() => {
   background: rgba(0, 0, 0, 0.5);  /* Fondo semi-transparente para que sea legible */
   padding: 10px;
   border-radius: 8px;  /* Bordes redondeados */
-  color: white;        /* Texto blanco para contraste */
+  color: rgb(145, 90, 90);        /* Texto blanco para contraste */
   font-family: Arial, sans-serif;
 }
 

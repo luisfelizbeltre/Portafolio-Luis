@@ -200,6 +200,7 @@ p {
   position: absolute;
   top: 150px;
   right: 30px;
+  color: #6da37062;
 
 }
 .quotes{
