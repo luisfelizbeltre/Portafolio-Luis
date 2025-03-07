@@ -81,6 +81,7 @@ onMounted(() => {
   justify-content: center;
   height: 2000px;
   max-height: 60vh;
+  background-color: #000;
 }
 
 /* ===== Contenedor Hero ===== */
@@ -225,6 +226,7 @@ p {
 
 /* Menú responsivo */
 @media (max-width: 768px) {
+  
   .social-links {
     margin-top: -10px;
     margin-bottom: 0;
@@ -232,6 +234,7 @@ p {
 
   .hero {
     padding: 3rem 0;
+    width: 100%;
   }
 
   .hero-content {

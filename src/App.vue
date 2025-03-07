@@ -1,8 +1,10 @@
 
 
 <template>
+
   <div class="container">
-    <Analytics />
+
+  <Analytics />
 
   <Navbar />
   <Hero />
@@ -13,24 +15,10 @@
   <Contact />
   
   <Footerd />
-
   </div>
-  
  
 </template>
 
-<script setup>
-import { Analytics } from '@vercel/analytics/vue';
-import Navbar from './components/Navbar.vue';
-import Hero from './components/Hero.vue';
-import About from './components/About.vue';
-import Projects from './components/Projects.vue';
-import Skills from './components/Skills.vue';
-import Education from './components/Education.vue';
-import Footerd from './components/Footer.vue';
-import Contact from './components/Contact.vue';
-
-</script>
 <style scoped>
 .logo {
   height: 6em;
@@ -46,7 +34,20 @@ import Contact from './components/Contact.vue';
 }
 
 .container{
-  width: 100%;
-  display: block;
+  overflow-x: hidden;
+
 }
 </style>
+
+<script setup>
+import { Analytics } from '@vercel/analytics/vue';
+import Navbar from './components/Navbar.vue';
+import Hero from './components/Hero.vue';
+import About from './components/About.vue';
+import Projects from './components/Projects.vue';
+import Skills from './components/Skills.vue';
+import Education from './components/Education.vue';
+import Footerd from './components/Footer.vue';
+import Contact from './components/Contact.vue';
+
+</script>
