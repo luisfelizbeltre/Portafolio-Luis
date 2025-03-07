@@ -167,7 +167,7 @@ p {
 
 .btn {
   background-color: #3498db;
-  color: #fff;
+  color: #000000;
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
