@@ -48,9 +48,7 @@
         </div>
        
       </div> 
-      <div class="whether">
-            <Whether />
-          </div>
+      
           
     </div>
    

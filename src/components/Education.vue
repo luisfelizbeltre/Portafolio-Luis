@@ -62,19 +62,26 @@ hr {
   border: none;
   margin: 20px auto;
 }
+.container{
+  
 
+
+}
 .education {
   padding: 40px 0;
   text-align: center;
   background-color: #161615; /* Sin cambios */
   border-radius: 50px;
+
 }
 
 .education-grid {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  padding: 20px;  overflow: visible; /* Asegura que los elementos sean visibles */
+
+  
 }
 
 .education-item {

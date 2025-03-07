@@ -167,26 +167,7 @@ const toggleHiddenCategories = () => {
   color: #e0e0e0; /* Blanco suavizado */
 }
 
-.skill-level {
-  flex-grow: 1;
-  height: 8px;
-  background-color: #e0e0e0; /* Fondo claro suavizado */
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-}
 
-.skill-level::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: var(--level);
-  background-color: #2ecc71; /* Verde unificado */
-  border-radius: 4px;
-  transition: width 0.5s ease;
-}
 
 .toggle-button {
   background-color: #3498db; /* Azul unificado */

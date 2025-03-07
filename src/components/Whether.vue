@@ -137,7 +137,7 @@ onMounted(() => {
 }
 
 .whether {
-  position: absolute;  /* Asegura que se pueda posicionar en relación a su contenedor */
+  position: fixed;  /* Asegura que se pueda posicionar en relación a su contenedor */
   top: 0px;           /* Ajusta para que quede cerca de la parte superior */
   right: 20px;         /* Ajusta para que quede cerca de la parte derecha */
   background: rgba(0, 0, 0, 0.5);  /* Fondo semi-transparente para que sea legible */

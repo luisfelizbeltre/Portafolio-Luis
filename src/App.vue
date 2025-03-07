@@ -1,10 +1,9 @@
 
 
 <template>
+  <div>
 
-  <div class="container">
-
-  <Analytics />
+     <Analytics />
 
   <Navbar />
   <Hero />
@@ -16,6 +15,7 @@
   
   <Footerd />
   </div>
+ 
  
 </template>
 
@@ -33,10 +33,6 @@
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 
-.container{
-  overflow-x: hidden;
-
-}
 </style>
 
 <script setup>

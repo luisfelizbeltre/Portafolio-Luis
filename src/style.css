@@ -50,6 +50,7 @@ button:focus-visible {
   body {
         background-size: cover;
         background-color: #1a1a1af3;
+        overflow-x:hidden;
   }
   
 

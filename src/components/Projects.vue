@@ -84,6 +84,7 @@ const proyectos = [
 </script>
 
 <style scoped>
+
 /* Estilos de la sección */
 .container{
   background-color: rgb(39, 40, 43);
@@ -187,6 +188,7 @@ p {
   .project-grid {
     grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
   }
+
 }
 
 /* Ajuste para pantallas muy pequeñas */
