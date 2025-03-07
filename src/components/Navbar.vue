@@ -14,7 +14,7 @@
           </li>
           <li>
             <a href="#education" @click="closeMenu" :class="{ active: activeSection === 'education' }">
-              <LucideCode class="icon" /> Educación
+              <i class="fa-solid fa-building-columns"></i> Educación
             </a>
           </li>       
           <li>
