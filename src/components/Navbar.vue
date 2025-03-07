@@ -96,8 +96,7 @@ const updateActiveSection = () => {
   })
 }
 onMounted(() => {
-  window.addEventListener("scroll", updateActiveSection);
-  updateActiveSection();
+
 });
 
 onUnmounted(() => {
