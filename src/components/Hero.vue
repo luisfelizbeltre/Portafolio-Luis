@@ -46,15 +46,18 @@
           <a href="/luiss CV 2025.pdf" download class="btn">Descargar CV</a>
          
         </div>
+        
        
       </div> 
       
-          
+         
+  
     </div>
    
-  </section><div class="quotes">
+  </section>
+  <div class="quotes">
             <Quotes />
-          </div>
+          </div> 
 </template>
 
 <script setup>
@@ -79,7 +82,7 @@ onMounted(() => {
   justify-content: center;
   height: 2000px;
   max-height: 60vh;
-  background-color: #00000081;
+  background-color: #252525;
 }
 
 /* ===== Contenedor Hero ===== */

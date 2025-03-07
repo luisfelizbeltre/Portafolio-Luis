@@ -9,7 +9,25 @@
 
 a {
   text-decoration: inherit;
+  
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+    
+
+  
 }
+a:hover {
+  color: #2ecc71;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+
+}
+
 
 
 h2 {
@@ -51,6 +69,8 @@ button:focus-visible {
         background-size: cover;
         background-color: #1a1a1af3;
         overflow-x:hidden;
+        width: 100%;
+        max-width: 100%;
   }
   
 

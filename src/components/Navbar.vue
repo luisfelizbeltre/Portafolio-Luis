@@ -5,8 +5,6 @@
       <h1 class="logo">
         <LucideUser class="icon" /> Luis Eduardo
       </h1>
-
-      <!-- Menú de navegación -->
       <nav :class="{ open: menuOpen }">
         <ul>
           <li>
@@ -14,16 +12,11 @@
               <LucideHome class="icon" /> Inicio
             </a>
           </li>
-          
-<!--educacion -->
           <li>
             <a href="#education" @click="closeMenu" :class="{ active: activeSection === 'education' }">
               <LucideCode class="icon" /> Educación
             </a>
-            
-          </li>
-
-        
+          </li>       
           <li>
             <a href="#projects" @click="closeMenu" :class="{ active: activeSection === 'projects' }">
               <LucideCode class="icon" /> Proyectos
@@ -58,16 +51,7 @@
 
 <script setup>
 import { ref,onMounted, onUnmounted } from "vue";
-import {
-  LucideHome,
-  LucideUser,
-  LucideCode,
-  LucideCpu,
-  LucideMail,
-  LucideMenu,
-  LucideX,
-  ZoomOut,
-} from "lucide-vue-next"; // Importando iconos
+import { LucideHome,LucideUser,LucideCode,LucideCpu,LucideMail, LucideMenu, LucideX, ZoomOut,} from "lucide-vue-next"; 
 
 const menuOpen = ref(false);
 
@@ -111,8 +95,9 @@ onUnmounted(() => {
   backdrop-filter: blur(10px);
   color: #fff;
   padding: 1rem ;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%; 
   z-index: 1000;
   transition: background 0.3s ease;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -142,28 +127,12 @@ onUnmounted(() => {
   gap: 1.5rem;
 }
 
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: color 0.3s ease;
-  
-}
 
 nav ul li a.active {
   color: #33ff57; /* Verde cuando está activo */
   font-weight: bold;
   transform: scale(1.4);
   transition: transform 0.3s ease;
-}
-a:hover {
-  color: #2ecc71;
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
-
 }
 
 .zoom-out{
@@ -240,7 +209,6 @@ span::after {
     top: 60px;
     left: 0;
     width: 100%;
-    background: rgba(52, 152, 219, 0.9);
     backdrop-filter: blur(10px);
     transform: translateY(-100%);
     transition: transform 0.3s ease;
@@ -273,7 +241,6 @@ span::after {
     top: 60px;
     left: 0;
     width: 100%;
-    background: rgba(52, 152, 219, 0.9);
     backdrop-filter: blur(10px);
     transform: translateY(-130%);
     transition: transform 0.3s ease;
