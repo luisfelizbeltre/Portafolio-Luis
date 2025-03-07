@@ -202,4 +202,19 @@ const toggleHiddenCategories = () => {
 .toggle-button:hover {
   background-color: #2ecc71; /* Verde al hover para cohesión */
 }
+
+@media (max-width: 768px) {
+  .skill-category{
+border: #f5f5f59a solid 1px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .skill-list {
+    grid-template-columns: 1fr;
+    
+  }
+}
 </style>

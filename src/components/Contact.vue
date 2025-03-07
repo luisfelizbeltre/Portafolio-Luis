@@ -90,6 +90,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    user-select: text;
+
   }
   
   .contact-item {

@@ -2,19 +2,23 @@
   <section id="hero" class="hero">
     <div class="container">
       <div class="hero-content">
-        <!-- Imagen de perfil -->
+        
         <div class="hero-grid">
+        
           <div data-aos="face-up" data-aos-duration="3000" class="img-container">
+            
             <nuxt-img src="/image.png" format="webp" />
 
             <img src="/luisfoto.webp" alt="Foto de [luis]" class="hero-img" loading="lazy" />
           </div>
           <div class="hero-text">
             <!-- Texto animado -->
+            
             <h1 class="fade-in">Luis Eduardo</h1>
             <p class="slide-up">
-              <span>D</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span>  <span></span>
-             
+              <span>D</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span>
+              <span></span>
+
               <span>F</span><span>u</span><span>l</span><span>l</span> <span></span>
               <span>S</span><span>t</span><span>a</span><span>c</span><span>k</span>
             </p>
@@ -24,32 +28,42 @@
 
             <!-- Redes sociales -->
             <div class="social-links">
-              <a href="https://github.com/luisfelizbeltre" target="_blank" class="social-btn">
+              <a href="https://github.com/" target="_blank" class="social-btn">
                 <LucideGithub class="icon" />
               </a>
-              <a href="https://linkedin.com/in/luis-eduardo-feliz-beltre" target="_blank" class="social-btn">
+              <a href="https://linkedin.com/in/" target="_blank" class="social-btn">
                 <LucideLinkedin class="icon" />
               </a>
-              <a href="mailto:dev@luiseduardodev.com" class="social-btn">
+              <a href="" class="social-btn">
                 <LucideMail class="icon" />
               </a>
             </div>
 
           </div>
-
+          
 
           <!-- Botón de descarga -->
           <a href="/luiss CV 2025.pdf" download class="btn">Descargar CV</a>
+         
         </div>
-      </div>
+       
+      </div> 
+      <div class="whether">
+            <Whether />
+          </div>
+          
     </div>
-
-  </section>
+   
+  </section><div class="quotes">
+            <Quotes />
+          </div>
 </template>
 
 <script setup>
 import { onMounted } from "vue";
 import { LucideGithub, LucideLinkedin, LucideMail } from "lucide-vue-next"; // Importando iconos
+import Whether from "./Whether.vue";
+import Quotes from "./Quotes.vue";
 
 onMounted(() => {
   document.querySelector(".hero-content").classList.add("visible");
@@ -66,7 +80,7 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   height: 2000px;
-  max-height: 75vh;
+  max-height: 60vh;
 }
 
 /* ===== Contenedor Hero ===== */
@@ -120,7 +134,7 @@ onMounted(() => {
 }
 
 /* ===== Texto Hero ===== */
-h1{
+h1 {
   font-size: 4.5rem;
   margin-bottom: 0.5rem;
 }
@@ -181,7 +195,23 @@ p {
   opacity: 0;
   animation: fadeIn 1.5s forwards;
 }
+.whether{
+  float: right;
+  position: absolute;
+  top: 150px;
+  right: 30px;
 
+}
+.quotes{
+
+  margin-bottom: 0;
+  color: #eeeeee; /* Verde unificado */
+  padding-bottom: 0;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-family: "Times New Roman", serif;
+
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -299,6 +329,7 @@ p {
 .slide-up span:nth-child(2) {
   animation-delay: 1.1s;
 }
+
 .slide-up span:nth-child(3) {
   animation-delay: 1.2s;
 }
@@ -410,5 +441,211 @@ p {
 .slide-up span:nth-child(30) {
   animation-delay: 3.9s;
 }
+/* ===== Hero Section ===== */
+.hero {
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Cambiado a auto para móviles */
+  min-height: 79vh; /* Asegura que ocupe al menos el 100% de la altura de la pantalla */
+}
 
+/* ===== Contenedor Hero ===== */
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Imagen de perfil ===== */
+.img-container {
+  width: 260px;
+  height: 260px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover {
+  transform: scale(1.05);
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 400px;
+}
+
+/* ===== Texto Hero ===== */
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 span {
+  color: #f1c40f;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Botón de Descarga CV ===== */
+.btn {
+  display: inline-block;
+  background: #0fc209;
+  color: #000;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #98d40d;
+  transform: scale(1.1);
+}
+
+/* ===== Redes Sociales ===== */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-btn {
+  background: rgba(12, 53, 189, 0.2);
+  padding: 0.7rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.2);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+/* ===== Animaciones ===== */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.whether {
+  float: right;
+  position: absolute;
+  top: 150px;
+  right: 30px;
+}
+
+.quotes {
+  margin-bottom: 0;
+  color: #eeeeee;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-family: "Times New Roman", serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Menú responsivo */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 0;
+    height: auto; 
+  }
+
+  .hero-grid {
+    flex-direction: column; 
+    gap: 1rem; 
+  }
+  .social-links
+  {
+    margin-top: -10px;
+    margin-bottom: 0;
+    display: inline-flex;
+  }
+
+  .img-container {
+    width: 150px; 
+    height: 150px;
+  }
+
+  .hero-text {
+    text-align: center; 
+    max-width: 100%; 
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem; 
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem; 
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    gap: 0.5rem; 
+    margin-bottom: 1rem;
+  }
+
+  .whether {
+    position: absolute; 
+    top: 40;
+    margin-top: 1rem;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .quotes {
+    font-size: 1rem;
+  }
+}
 </style>
