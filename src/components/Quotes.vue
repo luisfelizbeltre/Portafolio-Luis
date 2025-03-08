@@ -44,10 +44,9 @@ const getRandomQuote = () => {
 .quotes {
     margin-bottom: 0;
     padding-bottom: 0;
-}
-.quote{
     text-align: center;
 }
+
 .refresh-icon {
     display: inline-flex;
     justify-content: center;
