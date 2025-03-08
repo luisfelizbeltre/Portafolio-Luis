@@ -8,7 +8,7 @@
           <div data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
             data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
              class="about-image">
-            <img src="/imagenprueba.jpg" alt="Sobre mi imagen">
+            <img src="/fotoluiss.png" alt="Sobre mi imagen">
           </div>
           <div data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
             data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
@@ -67,9 +67,10 @@ onMounted(() => {
 
 .about-image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   height: auto;
   border-radius: 8px;
+  border: #ffffff1e solid 5px;
 }
 
 hr {
@@ -129,7 +130,7 @@ hr {
   }
 
   .about-text {
-    text-align: center;
+    text-align: left;
     width: 100%;
     max-width: 100%;
   }

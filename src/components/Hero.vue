@@ -9,7 +9,7 @@
 
             <nuxt-img src="/image.png" format="webp" />
 
-            <img src="/luisfoto.webp" alt="Foto de [luis]" class="hero-img" loading="lazy" />
+            <img src="/fotoluisfb.png" alt="Foto de [luis]" class="hero-img" loading="lazy" />
           </div>
           <div class="hero-text">
             <!-- Texto animado -->
@@ -88,7 +88,7 @@ onMounted(() => {
 /* ===== Contenedor Hero ===== */
 .hero-content {
 
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(20px);
@@ -115,7 +115,6 @@ onMounted(() => {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -127,7 +126,6 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
 }
 
 .hero-text {
@@ -467,7 +465,7 @@ p {
 
 /* ===== Contenedor Hero ===== */
 .hero-content {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(20px);
@@ -489,12 +487,10 @@ p {
 
 /* ===== Imagen de perfil ===== */
 .img-container {
-  width: 260px;
-  height: 260px;
+  width: 360px;
+  height: 360px;
   position: relative;
-  border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -506,7 +502,6 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
 }
 
 .hero-text {

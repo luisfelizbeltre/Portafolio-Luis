@@ -3,7 +3,7 @@
     <div class="container">
       <!-- Logo con icono -->
       <h1 class="logo">
-        <LucideUser class="icon" /> Luis Eduardo
+        <LucideUser class="icon" /> Luis
       </h1>
       <nav :class="{ open: menuOpen }">
         <ul>
