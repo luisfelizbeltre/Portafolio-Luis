@@ -32,7 +32,7 @@ const educationData = [
     institution: 'IES Francisco de Goya',
     date: '2022 - 2024',
     description: "Especialización en frontend y backend.",
-    additionalInfo: "Proyecto final sobre e-commerce con Vue y Node.js."
+    additionalInfo: "Proyecto final de gestión de tareas con funcionalidad Drag & Drop, desarrollado con Spring y Vue."
   },
   {
     icon: 'fas fa-graduation-cap',
