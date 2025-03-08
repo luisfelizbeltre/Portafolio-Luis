@@ -16,9 +16,7 @@
 
             <h1 class="fade-in">Luis Eduardo</h1>
             <p class="slide-up">
-              <span>D</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span>
-              <span></span>
-
+              <span>D</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span> <span></span>
               <span>F</span><span>u</span><span>l</span><span>l</span> <span></span>
               <span>S</span><span>t</span><span>a</span><span>c</span><span>k</span>
             </p>
