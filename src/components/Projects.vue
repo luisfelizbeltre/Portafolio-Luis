@@ -134,6 +134,7 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #0f100f;
   border: 1px solid #ffffff8e;
+  text-align: left;
   
 
 
@@ -157,6 +158,7 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 h3 {
   margin-bottom: 0.5rem;
   color: #2ecc71;
+  text-align: center;
 }
 
 p {
