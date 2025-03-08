@@ -171,13 +171,14 @@ const toggleHiddenCategories = () => {
 
 .toggle-button {
   background-color: #3498db; /* Azul unificado */
-  color: #e0e0e0; /* Blanco suavizado */
+  color: #000000; /* Blanco suavizado */
   padding: 10px 15px;
   border: none;
   cursor: pointer;
   margin-top: 15px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  font-size: 1.3em;
 }
 
 .toggle-button:hover {
