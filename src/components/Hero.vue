@@ -253,8 +253,8 @@ p {
   }
 
   .img-container {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
   }
 
   .social-links {
@@ -615,8 +615,8 @@ p {
   }
 
   .img-container {
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
   }
 
   .hero-text {
