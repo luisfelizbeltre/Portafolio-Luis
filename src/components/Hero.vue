@@ -284,7 +284,6 @@ p {
   to {
     opacity: 1;
     color: #10c06e;
-    /* Color final (negro o el que prefieras) */
   }
 }
 
@@ -456,9 +455,7 @@ p {
   align-items: center;
   justify-content: center;
   height: auto;
-  /* Cambiado a auto para móviles */
   min-height: 79vh;
-  /* Asegura que ocupe al menos el 100% de la altura de la pantalla */
 }
 
 /* ===== Contenedor Hero ===== */

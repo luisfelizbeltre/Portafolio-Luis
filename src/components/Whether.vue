@@ -137,13 +137,13 @@ onMounted(() => {
 }
 
 .whether {
-  position: fixed;  /* Asegura que se pueda posicionar en relación a su contenedor */
-  top: 0px;           /* Ajusta para que quede cerca de la parte superior */
-  right: 20px;         /* Ajusta para que quede cerca de la parte derecha */
-  background: rgba(0, 0, 0, 0.5);  /* Fondo semi-transparente para que sea legible */
+  position: fixed;  
+  top: 0px;           
+  right: 20px;         
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  border-radius: 8px;  /* Bordes redondeados */
-  color: rgb(145, 90, 90);        /* Texto blanco para contraste */
+  border-radius: 8px;  
+  color: rgb(145, 90, 90);        
   font-family: Arial, sans-serif;
 }
 
@@ -161,7 +161,7 @@ onMounted(() => {
   margin: 5px 0;
 }
 .weather-info img {
-  width: 40px;  /* Tamaño adecuado para el icono */
+  width: 40px;  
   height: 40px;
 }
 </style>

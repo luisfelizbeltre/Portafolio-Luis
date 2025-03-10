@@ -47,7 +47,6 @@
 </template>
 
 <style scoped>
-/* Importa Devicon si no está en tu proyecto */
 
 .contact-section {
   padding: 3rem 0;

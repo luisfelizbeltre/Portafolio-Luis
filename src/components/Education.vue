@@ -90,7 +90,7 @@ hr {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   text-align: left;
-  background-color: #0f100f; /* Fondo más consistente */
+  background-color: #0f100f; 
   width: 55%;
   border: solid 0.1px rgba(255, 255, 255, 0.267); /* Sin cambios */
 }

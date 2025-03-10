@@ -182,7 +182,7 @@ const toggleHiddenCategories = () => {
 }
 
 .toggle-button:hover {
-  background-color: #2ecc71; /* Verde al hover para cohesión */
+  background-color: #2ecc71;
 }
 
 @media (max-width: 768px) {
