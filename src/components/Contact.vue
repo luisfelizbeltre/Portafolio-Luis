@@ -59,6 +59,7 @@
   margin: 0 auto;
   text-align: center;
 
+
 }
 
 .section-title {
@@ -73,7 +74,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 2rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   border: solid 1px rgba(255, 255, 255, 0.74);
   user-select: all;
@@ -128,7 +129,7 @@
 }
 
 .contact-item p {
-  font-size: 1.125rem;
+  font-size: 1.14rem;
   color: #6b8070;
 }
 
@@ -136,7 +137,7 @@
   border: 0;
   height: 1px;
   background-color: #67d82f;
-  margin: 1.5rem 0;
+  margin: 1.7em 0;
 }
 
 .social-links {
