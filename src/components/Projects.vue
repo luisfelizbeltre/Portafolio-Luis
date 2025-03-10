@@ -46,7 +46,7 @@ const proyectos = [
   nombre: "Tienda de Reparaciones",
   descripcion: "Aplicación web para la gestión de una tienda de reparaciones de dispositivos electrónicos, desarrollada con React",
 
-  link: "https://github.com/luisfelizbeltre/clinicatech",
+  link: "https://doctorvoltio.com/",
   image: "/doctorvoltio.png",
   skills: [
     { name: "React", icon: "devicon-react-original colored" },
