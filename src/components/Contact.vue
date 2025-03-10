@@ -31,7 +31,7 @@
 
         <!-- Redes Sociales -->
         <div class="social-links">
-          <a href="www.linkedin.com/in/luiseduardofb" target="_blank" class="social-icon" aria-label="Visit my linkedim">
+          <a href="https://www.linkedin.com/in/luiseduardofb" target="_blank" class="social-icon" aria-label="Visit my linkedim">
             <i class=" social-icon devicon-linkedin-plain"></i>
           </a>
           <a href="https://github.com/luisfelizbeltre" target="_blank" class="social-icon" aria-label="Visit my github">

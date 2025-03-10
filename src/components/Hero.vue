@@ -25,13 +25,13 @@
               Con formación en SMR y DAW. Experiencia en desarrollo de software e implementación tecnológica.</p>
 
             <div class="social-links">
-              <a href="https://github.com/" target="_blank" class="social-btn" aria-label="Visit GitHub profile">
+              <a href="https://github.com/luisfelizbeltre" target="_blank" class="social-btn" aria-label="Visit GitHub profile">
                 <LucideGithub class="icon" />
               </a>
-              <a href="https://linkedin.com/in/" target="_blank" class="social-btn" aria-label="Visit LinkedIn profile">
+              <a href="https://www.linkedin.com/in/luiseduardofb" target="_blank" class="social-btn" aria-label="Visit LinkedIn profile">
                 <LucideLinkedin class="icon" />
               </a>
-              <a href="mailto:example@example.com" class="social-btn" aria-label="Send an email">
+              <a href="mailto:dev@luiseduardodev.com" class="social-btn" aria-label="Send an email">
                 <LucideMail class="icon" />
               </a>
             </div>

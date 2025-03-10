@@ -9,7 +9,7 @@
       <h2>Habilidades</h2>
 
       <div class="skills-grid">
-        <div v-for="(category, index) in skillCategories" :key="index" class="skill-category" style="margin-top:100px ;">
+        <div v-for="(category, index) in skillCategories" :key="index" class="skill-category" >
           <h3>{{ category.title }}</h3>
           <div class="skill-list">
             <div v-for="(skill, sIndex) in category.skills" :key="sIndex" class="skill"  data-aos="fade-up"
