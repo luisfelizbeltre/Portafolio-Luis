@@ -22,7 +22,7 @@
             </p>
 
             <p>
-              Con formación en SMR y DAW. Experiencia en desarrollo de software e implementación tecnológica.</p>
+              Desarrollador web Full Stack con formación en DAW y SMR, y experiencia en soluciones tecnológicas.</p>
 
             <div class="social-links">
               <a href="https://github.com/luisfelizbeltre" target="_blank" class="social-btn" aria-label="Visit GitHub profile">

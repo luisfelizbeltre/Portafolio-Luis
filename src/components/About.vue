@@ -14,9 +14,7 @@
             data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
              class="about-text">
             <p>
-              Desarrollador web con formación en SMR y DAW, y experiencia en
-              desarrollo Full Stack e implementación de soluciones tecnológicas.
-              <br />
+              Desarrollador web con formación en Grado Superior en DAW y Grado Medio en SMR, y experiencia en desarrollo Full Stack e implementación de soluciones tecnológicas. <br />
               <hr class="divider">
               <br>
               Destaco
