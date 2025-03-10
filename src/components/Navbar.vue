@@ -94,7 +94,7 @@ onUnmounted(() => {
 .header {
   backdrop-filter: blur(10px);
   color: #fff;
-  padding: 1rem ;
+  padding: 0.5rem ;
   position: fixed;
   top: 0;
   width: 100%; 
