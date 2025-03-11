@@ -71,7 +71,7 @@ const proyectos = [
   {nombre: "",
   descripcion: "Aplicación  con Laravel y Vue 3. (Proximamente)",
   link: "https://github.com/tu-usuario/memora-caps",
-  image: "/memora caps.png",
+  image: "",
   skills: [
     { name: "Laravel", icon: "devicon-laravel-plain colored" },
     { name: "Vue 3", icon: "devicon-vuejs-plain colored" },
