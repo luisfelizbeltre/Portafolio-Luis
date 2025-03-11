@@ -68,8 +68,8 @@ const proyectos = [
   ]
 }
 ,
-  {nombre: "MemoraCaps",
-  descripcion: "Aplicación para crear cápsulas digitales de recuerdos con multimedia, NFC y funciones colaborativas/heredables, desarrollada con Laravel y Vue 3. (Proximamente)",
+  {nombre: "",
+  descripcion: "Aplicación  con Laravel y Vue 3. (Proximamente)",
   link: "https://github.com/tu-usuario/memora-caps",
   image: "/memora caps.png",
   skills: [
