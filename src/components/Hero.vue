@@ -40,7 +40,7 @@
 
 
           <!-- Botón de descarga -->
-          <a href="/luiss CV 2025.pdf" download class="btn">Descargar CV
+          <a href="/luis cv 2025.pdf" download class="btn">Descargar CV
             <i class="fa-regular fa-file-pdf"></i> </a>
 
         </div>
